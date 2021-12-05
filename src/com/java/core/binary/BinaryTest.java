@@ -1,4 +1,4 @@
-package com.java.core.base;
+package com.java.core.binary;
 
 import org.junit.Test;
 
