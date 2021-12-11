@@ -2,6 +2,8 @@ package com.java.core.binary;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 /**
  * @description: 用于演示 四种进制的类
  * 1.二进制是逢2进位的进位制，0、1是基本算符。
@@ -30,6 +32,8 @@ public class BinaryTest {
         System.out.println("n3=" + n3);
         System.out.println("n4=" + n4);
         System.out.println(0x23A);
+
+        System.out.println(-1 >> 5);
 
     }
 

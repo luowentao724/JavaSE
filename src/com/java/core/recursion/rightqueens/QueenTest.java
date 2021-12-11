@@ -25,23 +25,25 @@ public class QueenTest {
     int[] arr = new int[max];
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
-        QueenTest quuen = new QueenTest();
-        quuen.PutQuuen(0);
+        QueenTest queenTest = new QueenTest();
+        queenTest.putQuuen(0);
         System.out.println("共有"+count+"种摆法");
     }
 
-    //写一个摆皇后的方法
-    private void PutQuuen(int n) {
-        if(n==max) {//因为n是从0开始增加，即n=0表示放第一个皇后，当n==max时表示皇后已经摆完了
+    /**
+     * 写一个摆皇后的方法
+     */
+    private void putQuuen(int n) {
+        //因为n是从0开始增加，即n=0表示放第一个皇后，当n==max时表示皇后已经摆完了
+        if(n==max) {
             Print();
             return;
         }
         for(int i=0;i<max;i++) {
             arr[n]=i;//放置第一个皇后
             if(judge(n)) {//判断皇后的位置是否冲突，不冲突继续放下一个皇后
-                PutQuuen(n+1);
+                putQuuen(n+1);
             }
         }
     }
